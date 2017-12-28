@@ -16,6 +16,8 @@ import javax.websocket.server.PathParam
 
 /**
  * A quick spring boot with Kotlin
+ *
+ * By: Haytham Mohamed
  */
 
 @SpringBootApplication
