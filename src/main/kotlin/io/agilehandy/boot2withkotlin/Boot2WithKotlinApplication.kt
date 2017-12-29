@@ -31,8 +31,9 @@ fun main(args: Array<String>) {
 @Component
 class Commander (val repository: CustomerRepository) : CommandLineRunner {
     override fun run(vararg args: String?) {
-        val customersList = listOf<Customer>(Customer("Haytham"), Customer("Hisham"), Customer("Hani"))
-        customersList.forEach { customer -> repository.save(customer) }
+        listOf("Haytham", "Hisham", "Hani", "Loai")
+                .map { name -> Customer(name) }
+                .forEach { customer -> repository.save(customer) }
     }
 }
 
